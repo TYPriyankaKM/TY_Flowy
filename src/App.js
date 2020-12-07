@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import MyFlowy from './components/flowy/MyFlowy';
+
+
+
+
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {/* Navbar */}
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+  
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
+        <a className="nav-link nav-brandName" href="#" style={{color:'white', fontWeight:500}}>Your Automation Pipeline</a>
+      </li>
+      <li>
+        <form className="form-inline my-2 my-lg-0" style={{marginLeft:'552px'}}>
+    <button className="btn btn-outline-light my-2 my-sm-0 mr-4" type="submit">Discard</button>
+      <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Post to Site</button>
+    </form>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+
+<MyFlowy/>
+
     </div>
+    </>
   );
 }
 
