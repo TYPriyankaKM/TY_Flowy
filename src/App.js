@@ -2,10 +2,6 @@ import React from 'react';
 import './App.css';
 import MyFlowy from './components/flowy/MyFlowy';
 
-
-
-
-
 function App() {
   return (
     <>
@@ -29,12 +25,9 @@ function App() {
       <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Post to Site</button>
     </form>
       </li>
-      
     </ul>
-    
   </div>
 </nav>
-
 
 <MyFlowy/>
 
